@@ -1,0 +1,19 @@
+.button {
+    padding: 22px 41px;
+    width: 156px;
+    height: 60px;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 800;
+
+    &_theme_white {
+        background: #fff;
+        color: $darkgreen;
+    
+    &:hover{
+        background:$darkgreen;
+        color: #fff;
+    }
+    }
+
+}

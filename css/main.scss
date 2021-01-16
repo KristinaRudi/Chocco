@@ -1,0 +1,24 @@
+$containerWidth:956px;
+$baseFontSize:18px;
+
+
+//colors
+$blue:#61c4d9;
+$darkgreen:#0b4d3c;
+
+//normalize
+@import url('./styles/layout/normalize.css');
+
+//setups
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,700;0,800;1,700&display=swap');
+@import "./styles/layout/base";
+
+//blocks
+@import "./styles/blocks/hero";
+@import "./styles/blocks/header";
+@import "./styles/blocks/logo";
+@import "./styles/blocks/menu";
+@import "./styles/blocks/phone";
+@import "./styles/blocks/button";
+@import "./styles/blocks/features";
+@import "./styles/blocks/feature";
