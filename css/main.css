@@ -327,6 +327,7 @@ img {
 
 .reviews-section {
   position: relative;
+  background: url("../img/decor/reviews/strawberries.png") top 6.4% right 1.9% no-repeat;
 }
 .reviews-section::before {
   content: url("../img/decor/reviews/leaf-vertical.png");
@@ -336,21 +337,11 @@ img {
   z-index: 0;
 }
 .reviews-section::after {
-  content: url("../img/decor/reviews/strawberries.png");
-  position: absolute;
-  top: 6.4%;
-  right: 1.9%;
-}
-
-.reviews__container {
-  position: relative;
-}
-.reviews__container::before {
   content: url("../img/decor/reviews/berries.png");
   position: absolute;
-  bottom: -143px;
-  left: -16.5%;
-  z-index: 1;
+  bottom: -84px;
+  left: 0%;
+  z-index: 20;
 }
 
 .reviews__display {
