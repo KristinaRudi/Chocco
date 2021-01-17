@@ -1,0 +1,21 @@
+.order-section{
+    position: relative;
+    background: url("../img/bg/delivery-back.png") no-repeat;
+    background-size: cover;
+    object-fit: cover;
+
+    &::before {
+        content: url("../img/decor/order/blueberry.png");
+        position: absolute;
+        bottom: 69px;
+        left: 4.6%;
+    }
+
+    &::after {
+        content: url("../img/decor/order/order-leaf.png");
+        position: absolute;
+        bottom: 58px;
+        right: 0.9%;
+    }
+
+}

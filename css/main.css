@@ -334,7 +334,7 @@ img {
   position: absolute;
   bottom: -153px;
   left: 0%;
-  z-index: 0;
+  z-index: 1;
 }
 .reviews-section::after {
   content: url("../img/decor/reviews/berries.png");
@@ -349,6 +349,19 @@ img {
   background-color: #F8FAF9;
   padding: 42px 177px 42px 48px;
   margin-bottom: 13px;
+  overflow: hidden;
+}
+.reviews__display:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 83px;
+  height: 83px;
+  background-color: #fff;
+  border-radius: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  top: -61px;
 }
 .reviews__display::after {
   content: url("../img/decor/reviews/raspberry-branch.png");
@@ -428,4 +441,28 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.order-section {
+  position: relative;
+  background: url("../img/bg/delivery-back.png") no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+.order-section::before {
+  content: url("../img/decor/order/blueberry.png");
+  position: absolute;
+  bottom: 69px;
+  left: 4.6%;
+}
+.order-section::after {
+  content: url("../img/decor/order/order-leaf.png");
+  position: absolute;
+  bottom: 58px;
+  right: 0.9%;
+}
+
+.order__title {
+  color: #0b4d3c;
+  text-transform: uppercase;
 }

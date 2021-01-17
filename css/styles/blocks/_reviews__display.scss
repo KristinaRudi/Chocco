@@ -3,8 +3,22 @@
     background-color: #F8FAF9;
     padding: 42px 177px 42px 48px;
     margin-bottom: 13px;
+    overflow: hidden;
 
-    
+
+    &:before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 83px;
+        height: 83px;
+        background-color: #fff;
+        border-radius: 50%;
+        left: 50%;
+        transform: translate(-50%);
+        top: -61px;
+    }
+
     &::after {
         content: url("../img/decor/reviews/raspberry-branch.png");
         position: absolute;
@@ -42,13 +56,13 @@
     color: $black;
 }
 
-.reviews__text{
+.reviews__text {
     margin-bottom: 25px;
-    line-height:22.6px ;
+    line-height: 22.6px;
 }
 
-.reviews__author{
+.reviews__author {
     color: $black;
-    line-height:24px;
+    line-height: 24px;
     font-weight: 500;
 }
