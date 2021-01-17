@@ -97,7 +97,7 @@ img {
   position: relative;
 }
 .hero::before {
-  content: url("../../../img/decor/hero/corner-leaf.png");
+  content: url("/img/decor/hero/corner-leaf.png");
   position: absolute;
   bottom: -36px;
   left: 3%;
