@@ -7,6 +7,7 @@ body {
     font-size: $baseFontSize;
     font-family: "Alegreya Sans", Arial, Helvetica, sans-serif;
     line-height: 1.42;
+    color: #666666;
     -webkit-font-smoothing: antialiased;
     -webkit-font-smoothing: grayscale;
     position: relative;
@@ -23,12 +24,8 @@ body {
 .container {
     width: $containerWidth;
     margin: 0 auto;
+    position: relative;
 }
-
-/*.section{
-    height: 100vh;
-}
-*/
 
 h1,
 h2,
@@ -37,6 +34,7 @@ h4,
 h5,
 h6 {
     margin-top: 0;
+    margin-bottom: 0;
     font-weight: normal;
 }
 

@@ -1,0 +1,19 @@
+.reviews-section {
+    position: relative;
+
+    &::before {
+        content: url("../img/decor/reviews/leaf-vertical.png");
+        position: absolute;
+        bottom: -153px;
+        left: 0%;
+        z-index: 0;
+    }
+
+    &::after {
+        content: url("../img/decor/reviews/strawberries.png");
+        position: absolute;
+        top: 6.4%;
+        right: 1.9%;
+    }
+
+}

@@ -1,5 +1,5 @@
 .hero {
-    background: url("../../../img/decor/hero/big-leaf.png") right bottom no-repeat;
+    background: url("../img/decor/hero/big-leaf.png") right bottom no-repeat;
     background-color: $blue;
     height: 98vh;
     min-height: 650px;
@@ -7,14 +7,14 @@
     position: relative;
 
     &::before {
-        content: url("/img/decor/hero/corner-leaf.png");
+        content: url("../img/decor/hero/corner-leaf.png");
         position: absolute;
         bottom: -36px;
         left: 3%;
     }
 
     &::after {
-        content: url("/img/decor/hero/comp.png");
+        content: url("../img/decor/hero/comp.png");
         position: absolute;
         bottom: -54px;
         right: 0%;
@@ -22,7 +22,7 @@
 }
 
 .hero__container {
-    background: url("../../../img/decor/hero/chocolates.png") right center/50% auto no-repeat;
+    background: url("../img/decor/hero/chocolates.png") right center/50% auto no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
