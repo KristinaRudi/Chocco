@@ -1,12 +1,12 @@
-.benefits-section{
+.benefits-section {
     position: relative;
     background: url("../img/decor/benefits/big-leaf-grey.png") left top 53% no-repeat;
-    /*padding: 102px 0 113px 0;*/
+    padding: 99px 0 117px 0;
 
-    &::before{
+    &::before {
         content: url("../img/decor/benefits/raspberry.png");
         position: absolute;
-        bottom: -121px;
+        bottom: -114px;
         left: 0;
     }
 }

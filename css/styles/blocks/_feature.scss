@@ -1,14 +1,15 @@
-.feature{
+.feature {
     display: flex;
     align-items: center;
 }
 
 .feature__icon {
-    width: 45px; 
+    width: 45px;
     height: 36px;
+    margin-right: 7px;
 }
 
-.feature__text{
+.feature__text {
     font-size: 16px;
     max-width: 75px;
     line-height: 18px;

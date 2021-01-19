@@ -4,7 +4,13 @@ $baseFontSize:18px;
 //colors
 $blue:#61c4d9;
 $darkgreen:#0b4d3c;
+$input-title:#497870;
+$green-one: #365A49;
+$green-two: #2E4E3F;
 $black:#292929;
+
+//z-indexes
+$z-fixed-menu:100;
 
 //normalize
 @import url('./styles/layout/normalize.css');
@@ -33,4 +39,8 @@ $black:#292929;
 @import "./styles/blocks/interactive-avatar";
 @import "./styles/blocks/order-section";
 @import "./styles/blocks/order__title";
-
+@import "./styles/blocks/form";
+@import "./styles/blocks/radio";
+@import "./styles/blocks/form__buttons";
+@import "./styles/blocks/map__img";
+@import "./styles/blocks/fixed-menu";

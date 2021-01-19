@@ -94,6 +94,9 @@ img {
   flex-direction: column;
   justify-content: center;
 }
+.section_font-color_green {
+  color: #497870;
+}
 
 .section__title {
   font-size: 48px;
@@ -108,7 +111,7 @@ img {
 .hero {
   background: url("../img/decor/hero/big-leaf.png") right bottom no-repeat;
   background-color: #61c4d9;
-  height: 98vh;
+  height: 100vh;
   min-height: 650px;
   color: #fff;
   position: relative;
@@ -122,7 +125,7 @@ img {
 .hero::after {
   content: url("../img/decor/hero/comp.png");
   position: absolute;
-  bottom: -54px;
+  bottom: -55px;
   right: 0%;
 }
 
@@ -132,7 +135,7 @@ img {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  padding: 24px 0 50px 0;
+  padding: 22px 0 59px 0;
 }
 
 .hero__title-section {
@@ -150,7 +153,7 @@ img {
 .hero__title-desc {
   font-size: 21px;
   margin-bottom: 48px;
-  padding-right: 66%;
+  padding-right: 64%;
   line-height: 25px;
 }
 
@@ -199,11 +202,26 @@ img {
 }
 .button_theme_white {
   background: #fff;
-  color: #0b4d3c;
+  color: #365A49;
 }
 .button_theme_white:hover {
-  background: #0b4d3c;
+  background: #365A49;
   color: #fff;
+}
+.button_theme_green {
+  background: #2E4E3F;
+  color: #fff;
+}
+.button_theme_green:hover {
+  color: #2E4E3F;
+  background: #fff;
+}
+.button_theme_transparent {
+  color: #497870;
+  font-weight: normal;
+  text-transform: none;
+  font-size: 18px;
+  margin-left: -25px;
 }
 
 .features {
@@ -211,7 +229,7 @@ img {
 }
 
 .features__item {
-  margin-right: 55px;
+  margin-right: 48px;
 }
 .features__item:last-child {
   margin-right: 0;
@@ -225,6 +243,7 @@ img {
 .feature__icon {
   width: 45px;
   height: 36px;
+  margin-right: 7px;
 }
 
 .feature__text {
@@ -236,12 +255,12 @@ img {
 .benefits-section {
   position: relative;
   background: url("../img/decor/benefits/big-leaf-grey.png") left top 53% no-repeat;
-  /*padding: 102px 0 113px 0;*/
+  padding: 99px 0 117px 0;
 }
 .benefits-section::before {
   content: url("../img/decor/benefits/raspberry.png");
   position: absolute;
-  bottom: -121px;
+  bottom: -114px;
   left: 0;
 }
 
@@ -272,7 +291,7 @@ img {
 .benefits__item::before {
   content: url("../img/icons/combined-shape-first.svg");
   position: absolute;
-  top: 30px;
+  top: 60px;
   right: 0;
   transform: translate(50%);
 }
@@ -332,14 +351,14 @@ img {
 .reviews-section::before {
   content: url("../img/decor/reviews/leaf-vertical.png");
   position: absolute;
-  bottom: -153px;
+  bottom: -167px;
   left: 0%;
   z-index: 1;
 }
 .reviews-section::after {
   content: url("../img/decor/reviews/berries.png");
   position: absolute;
-  bottom: -84px;
+  bottom: -95px;
   left: 0%;
   z-index: 20;
 }
@@ -366,8 +385,8 @@ img {
 .reviews__display::after {
   content: url("../img/decor/reviews/raspberry-branch.png");
   position: absolute;
-  top: 5%;
-  right: 0%;
+  top: 6%;
+  right: 1%;
 }
 
 .reviews__display-inner {
@@ -452,17 +471,170 @@ img {
 .order-section::before {
   content: url("../img/decor/order/blueberry.png");
   position: absolute;
-  bottom: 69px;
+  bottom: 62px;
   left: 4.6%;
 }
 .order-section::after {
   content: url("../img/decor/order/order-leaf.png");
   position: absolute;
-  bottom: 58px;
+  bottom: 49px;
   right: 0.9%;
 }
 
 .order__title {
-  color: #0b4d3c;
+  color: #365A49;
   text-transform: uppercase;
+  margin-bottom: 52px;
+}
+
+.form {
+  display: flex;
+  padding: 1px 2px 0 8px;
+}
+
+.form__col {
+  flex: 1;
+  margin-right: 31px;
+}
+.form__col:last-child {
+  margin-right: 0px;
+}
+
+.form__row {
+  display: flex;
+  margin-bottom: 13px;
+}
+.form__row:last-child {
+  margin-right: 0px;
+}
+
+.form__block {
+  flex: 1;
+  margin-right: 20px;
+}
+.form__block:last-child {
+  margin-right: 0;
+}
+
+.form__input {
+  width: 100%;
+  border: none;
+  padding: 15px 12px;
+  border: solid 3px transparent;
+  border-radius: 4px;
+  outline: darkgreen;
+}
+.form__input:focus {
+  border-color: #dee2bd;
+  outline: none;
+}
+.form__input__textarea {
+  width: 450px;
+  height: 152px;
+  resize: none;
+  margin-bottom: 19px;
+}
+
+.form__controls {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 19px;
+}
+.form__controls:last-child {
+  margin-bottom: 0;
+}
+
+.radio {
+  display: flex;
+  cursor: pointer;
+  -webkit-user-select: none;
+          user-select: none;
+  margin-right: 23px;
+}
+.radio:last-child {
+  margin-right: 0;
+}
+.radio__checkbox .radio__visible {
+  border-radius: 4px;
+}
+.radio__checkbox .radio__visible::before {
+  background: url("../img/icons/vector.svg") center center no-repeat;
+}
+
+.radio__elem {
+  display: none;
+}
+.radio__elem:checked ~ .radio__visible::before {
+  display: block;
+}
+
+.radio__visible {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: relative;
+  background-color: #fff;
+  margin-right: 11px;
+}
+.radio__visible::before {
+  content: "";
+  width: 13px;
+  height: 13px;
+  background-color: #365A49;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.form__buttons {
+  margin-top: 45px;
+  margin-left: -10px;
+}
+
+.map__img {
+  object-fit: cover;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.fixed-menu {
+  position: fixed;
+  top: 42%;
+  right: 3%;
+  z-index: 100;
+}
+
+.fixed-menu__item {
+  margin-bottom: 6px;
+  position: relative;
+}
+.fixed-menu__item:last-child {
+  margin-bottom: 0;
+}
+.fixed-menu__item_active .fixed-menu__link {
+  border-color: #fff;
+}
+
+.fixed-menu__link {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  display: block;
+}
+.fixed-menu__link::before {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

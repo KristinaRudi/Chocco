@@ -1,12 +1,12 @@
 .reviews-section {
     position: relative;
     background: url("../img/decor/reviews/strawberries.png") top 6.4% right 1.9% no-repeat;
-    
+
 
     &::before {
         content: url("../img/decor/reviews/leaf-vertical.png");
         position: absolute;
-        bottom: -153px;
+        bottom: -167px;
         left: 0%;
         z-index: 1;
     }
@@ -14,7 +14,7 @@
     &::after {
         content: url("../img/decor/reviews/berries.png");
         position: absolute;
-        bottom: -84px;
+        bottom: -95px;
         left: 0%;
         z-index: 20;
     }

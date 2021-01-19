@@ -13,7 +13,7 @@
 <body>
   <div class="wrapper">
     <div class="maincontent">
-      <section class="hero">
+      <section class="section hero">
         <div class="container hero__container">
           <header class="header">
             <img src="./img/icons/logo.svg" alt="chocco logo" class="logo">
@@ -183,16 +183,117 @@
           </div>
         </div>
       </section>
-      <section class="section order-section">
+      <section class="section order-section section_font-color_green">
         <div class="container">
-          <div class="order">
-            <h2 class="section__title order__title">Закажите доставку</h2>
-          </div>
+          <h2 class="section__title order__title">Закажите доставку</h2>
+          <form class="form">
+            <div class="form__col">
+              <div class="form__row">
+                <label class="form__block">
+                  <div class="form__title">Имя</div>
+                  <input type="text" class="form__input">
+                </label>
+                <label class="form__block">
+                  <div class="form__title">Телефон</div>
+                  <input type="tel" class="form__input">
+                </label>
+              </div>
+              <div class="form__row">
+                <label class="form__block">
+                  <div class="form__title">Улица</div>
+                  <input type="text" class="form__input">
+                </label>
+
+              </div>
+              <div class="form__row">
+                <label class="form__block">
+                  <div class="form__title">Дом</div>
+                  <input type="text" class="form__input">
+                </label>
+                <label class="form__block">
+                  <div class="form__title">Корпус</div>
+                  <input type="tel" class="form__input">
+                </label>
+                <label class="form__block">
+                  <div class="form__title">Квартира</div>
+                  <input type="tel" class="form__input">
+                </label>
+                <label class="form__block">
+                  <div class="form__title">Этаж</div>
+                  <input type="tel" class="form__input">
+                </label>
+              </div>
+            </div>
+            <div class="form__col">
+              <div class="form__row">
+                <label class="form__block">
+                  <div class="form__title">Комментарий</div>
+                  <textarea class="form__input form__input__textarea"></textarea>
+                </label>
+              </div>
+              <div class="form__controls">
+                <label class="radio">
+                  <input type="radio" name="option" class="radio__elem">
+                  <div class="radio__visible"></div>
+                  <div class="radio__title">Потребуется сдача</div>
+                </label>
+                <label class="radio">
+                  <input type="radio" name="option" class="radio__elem">
+                  <div class="radio__visible"></div>
+                  <div class="radio__title">Оплата картой</div>
+                </label>
+              </div>
+              <div class="form__controls">
+                <label class="radio radio__checkbox">
+                  <input type="checkbox" class="radio__elem">
+                  <div class="radio__visible"></div>
+                  <div class="radio__title">Не перезванивать</div>
+                </label>
+              </div>
+              <div class="form__buttons">
+                <input type="submit" value="Заказать" class="button button_theme_green">
+                <input type="reset" value="Очистить" class="button button_theme_transparent">
+              </div>
+            </div>
+          </form>
         </div>
       </section>
-      <div style="height: 600px;"></div>
+      <section map-section>
+        <img src="./img/content/map.jpg" alt="map chocco" class="map__img">
+      </section>
     </div>
   </div>
+  <nav class="fixed-menu">
+    <ul class="fixed-menu__list">
+      <li class="fixed-menu__item fixed-menu__item_active">
+        <a href="" class="fixed-menu__link"></a>
+      </li>
+      <li class="fixed-menu__item">
+        <a href="" class="fixed-menu__link"></a>
+      </li>
+      <li class="fixed-menu__item">
+        <a href="" class="fixed-menu__link"></a>
+      </li>
+      <li class="fixed-menu__item">
+        <a href="" class="fixed-menu__link"></a>
+      </li>
+      <li class="fixed-menu__item">
+        <a href="" class="fixed-menu__link"></a>
+      </li>
+      <li class="fixed-menu__item">
+        <a href="" class="fixed-menu__link"></a>
+      </li>
+      <li class="fixed-menu__item">
+        <a href="" class="fixed-menu__link"></a>
+      </li>
+      <li class="fixed-menu__item">
+        <a href="" class="fixed-menu__link"></a>
+      </li>
+      <li class="fixed-menu__item">
+        <a href="" class="fixed-menu__link"></a>
+      </li>
+    </ul>
+  </nav>
 </body>
 
 </html>

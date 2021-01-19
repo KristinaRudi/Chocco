@@ -1,18 +1,21 @@
-.section{
+.section {
     height: 100vh;
     min-height: 650px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    &_font-color_green {
+        color: $input-title;
+    }
 }
 
-.section__title{
+.section__title {
     font-size: 48px;
     font-weight: bold;
-    line-height:57,6px;
-    color:$black;
+    line-height: 57, 6px;
+    color: $black;
     margin-bottom: 27px;
     text-align: center;
     text-transform: uppercase;
 }
-

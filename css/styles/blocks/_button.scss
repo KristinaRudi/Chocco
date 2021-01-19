@@ -8,12 +8,30 @@
 
     &_theme_white {
         background: #fff;
-        color: $darkgreen;
-    
-    &:hover{
-        background:$darkgreen;
-        color: #fff;
+        color: $green-one;
+
+        &:hover {
+            background: $green-one;
+            color: #fff;
+        }
     }
+
+    &_theme_green {
+        background: $green-two;
+        color: #fff;
+
+        &:hover {
+            color: $green-two;
+            background: #fff;
+        }
+    }
+
+    &_theme_transparent {
+        color: $input-title;
+        font-weight: normal;
+        text-transform: none;
+        font-size: 18px;
+        margin-left: -25px;
     }
 
 }
