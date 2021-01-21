@@ -84,4 +84,8 @@ img {
     font-weight: bolder;
     border-radius: 100px;
     line-height: 1;
+
+    &:focus{
+        outline: none;
+    }
 }
