@@ -1,7 +1,16 @@
-.header{
+.header {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
+
+    @include tablets {
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
-
+.phone-number.header__phone-number {
+    @include tablets {
+        display: none;
+    }
+}

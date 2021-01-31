@@ -1,15 +1,21 @@
 .button {
-    padding: 22px 41px;
-    width: 156px;
-    height: 60px;
-    font-size: 16px;
-    line-height: 18px;
+    padding: rem(22px) rem(41px);
+    width: rem(156px);
+    height: rem(60px);
+    font-size: rem(16px);
+    line-height: rem(18px);
     font-weight: 800;
 
-    
     &_theme_white {
         background: #fff;
         color: $green-one;
+
+        @include phones {
+            font-size: 1.2rem;
+            padding: 1.4rem 2.2rem;
+            width: 9.9rem;
+            height: 3.7rem;
+        }
 
         &:hover {
             background: $green-one;
@@ -31,8 +37,12 @@
         color: $input-title;
         font-weight: normal;
         text-transform: none;
-        font-size: 18px;
-        margin-left: -25px;
-    }
+        font-size: rem(18px);
+        margin-left: rem(-25px);
 
+        @include tablets {
+            margin-left: -0.4rem;
+
+        }
+    }
 }

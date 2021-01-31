@@ -2,7 +2,21 @@
     display: flex;
     cursor: pointer;
     user-select: none;
-    margin-right: 23px;
+    margin-right: rem(23px);
+
+    &:first-child {
+        margin-bottom: rem(10px);
+
+    }
+
+    @include tablets {
+        margin-right: 1.9rem;
+
+        @include phones {
+            margin-bottom: rem(0px);
+        }
+
+    }
 
     &:last-child {
         margin-right: 0;
@@ -10,10 +24,10 @@
 
     &__checkbox {
         .radio__visible {
-            border-radius: 4px;
+            border-radius: rem(4px);
 
             &::before {
-                background: url("../img/icons/vector.svg") center center no-repeat;
+                background: url("../img/decor/order/checkmark.png") center center no-repeat;
             }
         }
     }
@@ -30,17 +44,17 @@
 }
 
 .radio__visible {
-    width: 25px;
-    height: 25px;
+    width: rem(25px);
+    height: rem(25px);
     border-radius: 50%;
     position: relative;
     background-color: #fff;
-    margin-right: 11px;
+    margin-right: rem(11px);
 
     &::before {
         content: "";
-        width: 13px;
-        height: 13px;
+        width: rem(13px);
+        height: rem(13px);
         background-color: #365A49;
         border-radius: 50%;
         position: absolute;

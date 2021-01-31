@@ -1,6 +1,11 @@
 $containerWidth:956px;
 $baseFontSize:18px;
 
+//breakpoints
+$tablets:768px;
+$phones: 480px;
+
+
 //colors
 $blue:#61c4d9;
 $darkgreen:#0b4d3c;
@@ -11,6 +16,8 @@ $black:#292929;
 
 //z-indexes
 $z-fixed-menu:100;
+
+@import "./styles/blocks/media";
 
 //normalize
 @import url('./styles/layout/normalize.css');
@@ -27,6 +34,7 @@ $z-fixed-menu:100;
 @import "./styles/blocks/menu";
 @import "./styles/blocks/phone";
 @import "./styles/blocks/button";
+@import "./styles/blocks/hamburger";
 @import "./styles/blocks/features";
 @import "./styles/blocks/feature";
 @import "./styles/blocks/benefits-section";
@@ -42,5 +50,7 @@ $z-fixed-menu:100;
 @import "./styles/blocks/form";
 @import "./styles/blocks/radio";
 @import "./styles/blocks/form__buttons";
-@import "./styles/blocks/map__img";
+@import "./styles/blocks/contacts";
+@import "./styles/blocks/footer";
+@import "./styles/blocks/socials";
 @import "./styles/blocks/fixed-menu";

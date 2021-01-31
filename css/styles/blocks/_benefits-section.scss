@@ -1,12 +1,38 @@
 .benefits-section {
     position: relative;
-    background: url("../img/decor/benefits/big-leaf-grey.png") left top 53% no-repeat;
-    padding: 99px 0 117px 0;
+    background: url("../img/decor/benefits/big-leaf-grey.png") left top 42% no-repeat;
+    padding: 1.7rem 0 6.4rem 0;
+    height: 90vh;
+
+    @include tablets {
+        background-position: left top 11%;
+        min-height: 58.8rem;
+    }
+
+    @include phones {
+        background: none;
+        min-height: 60rem;
+        padding: 0 0 0.9rem 0;
+    }
 
     &::before {
         content: url("../img/decor/benefits/raspberry.png");
         position: absolute;
-        bottom: -114px;
+        bottom: -5.5rem;
         left: 0;
+
+        @include tablets {
+            bottom: -8rem;
+        }
+
+        @include phones {
+            display: none;
+        }
+    }
+}
+
+.benefits__container {
+    @include phones {
+        width: 98%;
     }
 }

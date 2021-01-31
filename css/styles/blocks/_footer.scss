@@ -1,0 +1,42 @@
+.footer-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    background-color: #fff;
+    height: rem(86px);
+    min-height: rem(86px);
+    width: 100%;
+    bottom: 0;
+
+    @include tablets {
+        height: 26%;
+    }
+
+    @include phones {
+        height: 26.5%;
+    }
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    padding: rem(13px) rem(5px) rem(13px) rem(11px);
+
+    @include tablets {
+        width: 97%;
+        padding: 1.6rem 1.3rem 0.722222rem 0.6111111111rem;
+    }
+
+    @include phones {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 4% 0% 0% 0%;
+    }
+}
+
+.footer__phone-number {
+    font-size: rem(21px);
+    margin-top: rem(-1px);
+}

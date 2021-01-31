@@ -1,13 +1,42 @@
-.headline{
+.headline {
     text-align: center;
-    margin-bottom: 49px;
+    margin-bottom: rem(49px);
+
+    @include tablets {
+        margin-bottom: 3.3rem;
+    }
+
+
+    @include phones {
+        margin-bottom: 3.3rem;
+    }
 }
 
-.headline__title{
-    margin-bottom: 14px;
+
+.headline__title {
+    margin-bottom: 1.4rem;
+
+    @include tablets {
+        margin-bottom: 0.8rem;
+    }
+
+    @include phones {
+        font-size: 2.5rem;
+        margin-bottom: 0.4rem;
+    }
 }
 
-.headline__subtitle{
+.headline__subtitle {
     padding: 0 26%;
-    line-height:22.6px;
+    line-height: rem(22px);
+
+    @include tablets {
+        padding: 0 21%;
+    }
+
+    @include phones {
+        padding: 0 0;
+        font-size: 1.1rem;
+        line-height: 1.3;
+    }
 }

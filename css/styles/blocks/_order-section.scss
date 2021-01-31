@@ -1,21 +1,36 @@
-.order-section{
+.order-section {
     position: relative;
     background: url("../img/bg/delivery-back.png") no-repeat;
     background-size: cover;
-    object-fit: cover;
+    height: 90.5vh;
+
+    @include tablets {
+        min-height: 56.8rem;
+    }
+
+    @include phones {
+        min-height: 47.8rem;
+    }
 
     &::before {
         content: url("../img/decor/order/blueberry.png");
         position: absolute;
-        bottom: 62px;
+        bottom: rem(62px);
         left: 4.6%;
+
+        @include tablets {
+            display: none;
+        }
     }
 
     &::after {
         content: url("../img/decor/order/order-leaf.png");
         position: absolute;
-        bottom: 49px;
+        bottom: rem(49px);
         right: 0.9%;
-    }
 
+        @include tablets {
+            display: none;
+        }
+    }
 }

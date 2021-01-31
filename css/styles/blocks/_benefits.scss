@@ -1,5 +1,10 @@
 .benefits {
     display: flex;
+
+    @include phones {
+        flex-direction: column;
+        padding-right: 10%;
+    }
 }
 
 .benefits__item {
@@ -7,12 +12,35 @@
     padding: 0 2%;
     position: relative;
 
+    @include tablets {
+        padding: 0 4%;
+        ;
+        margin-bottom: 0;
+    }
+
+    @include phones {
+        padding: 0;
+        margin-bottom: 11%;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
     &::before {
-        content: url("../img/icons/combined-shape-first.svg");
+        content: url("../img/decor/benefits/Combined-shape.png");
         position: absolute;
-        top: 60px;
+        top: rem(60px);
         right: 0;
         transform: translate(50%);
+
+        @include tablets {
+            display: none;
+        }
+
+        @include phones {
+            display: none;
+        }
     }
 
     &:first-child {
@@ -26,5 +54,4 @@
             display: none;
         }
     }
-
 }

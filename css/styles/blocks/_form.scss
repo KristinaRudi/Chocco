@@ -1,29 +1,59 @@
 .form {
     display: flex;
-    padding: 1px 2px 0 8px;
+    padding: rem(1px) 0.5rem 0 rem(8px);
+
+    @include tablets {
+        flex-direction: column;
+        padding: 0% 17.4% 0% 17%;
+    }
+
+    @include phones {
+        padding: 0% 0%;
+    }
+
 }
 
 .form__col {
     flex: 1;
-    margin-right: 31px;
+    margin-right: 4%;
 
     &:last-child {
-        margin-right: 0px;
+        margin-right: rem(0px);
+    }
+
+    @include tablets {
+        margin-right: rem(0px);
     }
 }
 
 .form__row {
     display: flex;
-    margin-bottom: 13px;
+    margin-bottom: rem(13px);
 
     &:last-child {
-        margin-bottom: 0px;
+        margin-bottom: rem(0px);
+    }
+
+    @include phones {
+        margin-bottom: 0.9rem;
+    }
+}
+
+.order__form__row {
+    @include tablets {
+        margin-top: 0.6rem;
+        margin-bottom: 3.6rem;
+    }
+
+    @include phones {
+        margin-top: 1rem;
+        margin-bottom: 4.1rem;
     }
 }
 
 .form__block {
     flex: 1;
-    margin-right: 20px;
+    margin-right: rem(20px);
 
     &:last-child {
         margin-right: 0;
@@ -33,10 +63,14 @@
 .form__input {
     width: 100%;
     border: none;
-    padding: 15px 12px;
-    border: solid 3px transparent;
-    border-radius: 4px;
+    padding: rem(15px) rem(12px);
+    border: solid rem(3px) transparent;
+    border-radius: rem(4px);
     outline: darkgreen;
+
+    @include tablets {
+        padding: 0.4rem rem(12px);
+    }
 
     &:focus {
         border-color: #dee2bd;
@@ -44,19 +78,33 @@
     }
 
     &__textarea {
-        width: 450px;
-        height: 152px;
+        width: 100%;
+        height: rem(152px);
         resize: none;
-        margin-bottom: 19px;
+        margin-bottom: rem(19px);
+
+        @include tablets {
+            width: 100%;
+            margin-bottom: -2.7rem;
+            height: 5rem;
+        }
     }
 }
 
 .form__controls {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 19px;
+    margin-bottom: rem(9px);
+
+    @include tablets {
+        margin-bottom: 0.8rem;
+    }
+
+    @include phones {
+        justify-content: center;
+    }
 
     &_last-elem {
-        margin-bottom: 0px;
+        margin-bottom: rem(0px);
     }
 }
