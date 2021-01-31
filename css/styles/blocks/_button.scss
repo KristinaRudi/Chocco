@@ -27,6 +27,16 @@
         background: $green-two;
         color: #fff;
 
+        @include tablets {
+            width: 9.8rem;
+            height: 3.7rem;
+        }
+
+        @include phones {
+            width: 9.8rem;
+            height: 3.7rem;
+        }
+
         &:hover {
             color: $green-two;
             background: #fff;

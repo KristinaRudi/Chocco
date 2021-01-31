@@ -389,6 +389,18 @@ img {
   background: #2E4E3F;
   color: #fff;
 }
+@media screen and (max-width: 768px) {
+  .button_theme_green {
+    width: 9.8rem;
+    height: 3.7rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .button_theme_green {
+    width: 9.8rem;
+    height: 3.7rem;
+  }
+}
 .button_theme_green:hover {
   color: #2E4E3F;
   background: #fff;
@@ -1190,8 +1202,8 @@ img {
 }
 @media screen and (max-width: 480px) {
   .form__buttons {
-    margin-top: 2.3rem;
-    margin-left: 3rem;
+    margin-top: 2rem;
+    margin-left: 3.6rem;
   }
 }
 
