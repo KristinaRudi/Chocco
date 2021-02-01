@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: absolute;
+    /*position: absolute;*/
     background-color: #fff;
     height: rem(86px);
     min-height: rem(86px);
@@ -10,11 +10,13 @@
     bottom: 0;
 
     @include tablets {
-        height: 26%;
+        height: rem(107px);
+        min-height: rem(107px);
     }
 
     @include phones {
-        height: 26.5%;
+        height: rem(151px);
+        min-height: rem(151px);
     }
 }
 

@@ -4,7 +4,7 @@
 }
 
 .socials__item {
-    margin-right: rem(15px);
+    margin-right: rem(14px);
 
     &:last-child {
         margin-right: 0;
@@ -17,8 +17,8 @@
 }
 
 .socials__link {
-    width: rem(20px);
-    height: rem(20px);
+    width: 20px;
+    height: 20px;
     fill: #B3B3B3;
 
     &:hover {

@@ -104,6 +104,10 @@
         justify-content: center;
     }
 
+    @include mini-phones{
+        justify-content:space-between;
+    }
+
     &_last-elem {
         margin-bottom: rem(0px);
     }
