@@ -21,7 +21,7 @@
     }
 
     @include phones {
-        margin-right: 1.4rem;
+        margin-right: 1.3rem;
         margin-bottom: 0rem;
     }
 }
@@ -60,10 +60,10 @@
     margin-bottom: rem(18px);
 
     @include tablets {
-        margin-bottom: 0.6rem;
+        margin-bottom: 0.4rem;
     }
 
-    @include tablets {
+    @include phones {
         font-size: 1.7rem;
         margin-bottom: 0.9rem;
     }
