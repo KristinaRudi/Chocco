@@ -1,11 +1,19 @@
 .menu__pos__vertical {
-    margin: 0;
-    padding-top: 0;
-    width: 253px;
-    height: 510px;
+    .menu__list {
+        flex-direction: column;
+        margin-right: 0rem;
+        flex-wrap: nowrap;
+    }
 
-    @include tablets {
-        display: flex;
+    .menu__item {
+        margin-right: 0px;
+        margin-bottom: rem(5px);
+        color: #fff;
+        font-size: rem(38px);
+        line-height: rem(72px);
+
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 }
-

@@ -4,6 +4,17 @@
 
     @include tablets {
         display: none;
+
+        &__pos__vertical {
+            margin: 0;
+            padding-top: 0;
+            width: 253px;
+            height: 510px;
+
+            @include tablets {
+                display: flex;
+            }
+        }
     }
 
     .menu__list {
@@ -13,12 +24,6 @@
         align-items: center;
         margin-right: 1.75rem;
         margin-bottom: rem(-10px);
-
-        &__vertical {
-            flex-direction: column;
-            margin-right: 0rem;
-            flex-wrap: nowrap;
-        }
     }
 
     .menu__item {
