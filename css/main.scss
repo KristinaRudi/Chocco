@@ -16,7 +16,10 @@ $green-two: #2E4E3F;
 $black:#292929;
 
 //z-indexes
+$reviews-section-before:1;
+$reviews-section-after:20;
 $z-fixed-menu:100;
+$fs-menu:150;
 
 @import "./styles/blocks/media";
 
@@ -55,3 +58,5 @@ $z-fixed-menu:100;
 @import "./styles/blocks/footer";
 @import "./styles/blocks/socials";
 @import "./styles/blocks/fixed-menu";
+@import "./styles/blocks/fullscreen-menu";
+@import "./styles/blocks/menu__vertical";

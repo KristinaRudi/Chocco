@@ -5,26 +5,32 @@
     @include tablets {
         display: none;
     }
-}
 
-.menu__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-right: 1.75rem;
-    margin-bottom: rem(-10px);
-}
+    .menu__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-right: 1.75rem;
+        margin-bottom: rem(-10px);
 
-.menu__item {
-    margin-right: rem(27px);
-    margin-bottom: rem(10px);
-
-    &:last-child {
-        margin-right: 0;
+        &__vertical {
+            flex-direction: column;
+            margin-right: 0rem;
+            flex-wrap: nowrap;
+        }
     }
-}
 
-.menu__link {
-    white-space: nowrap;
+    .menu__item {
+        margin-right: rem(27px);
+        margin-bottom: rem(10px);
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    .menu__link {
+        white-space: nowrap;
+    }
 }

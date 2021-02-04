@@ -1,15 +1,15 @@
 .contacts-section {
     position: relative;
     height: 102.5vh;
-    min-height: rem(731px);
+    min-height: 41rem;
 
     @include tablets {
-        min-height: rem(633px);
+        min-height: 36.9rem;
         height: 87vh;
     }
 
     @include phones {
-        min-height: rem(633px);
+        min-height: 38.3rem;
         height: 85vh;
     }
 }
