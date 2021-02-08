@@ -2,22 +2,7 @@
     margin: 0 rem(14px);
     padding-top: rem(7px);
 
-    @include tablets {
-        display: none;
-
-        &__pos__vertical {
-            margin: 0;
-            padding-top: 0;
-            width: 253px;
-            height: 510px;
-
-            @include tablets {
-                display: flex;
-            }
-        }
-    }
-
-    .menu__list {
+    &__list {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -26,7 +11,7 @@
         margin-bottom: rem(-10px);
     }
 
-    .menu__item {
+    &__item {
         margin-right: rem(27px);
         margin-bottom: rem(10px);
 
@@ -35,7 +20,40 @@
         }
     }
 
-    .menu__link {
+    &__link {
         white-space: nowrap;
+    }
+
+    @include tablets {
+        display: none;
+    }
+
+    &--pos-vertical {
+        margin: 0;
+        padding-top: 0;
+        width: 253px;
+        height: 510px;
+
+        .menu__list {
+            flex-direction: column;
+            margin-right: 0rem;
+            flex-wrap: nowrap;
+        }
+
+        .menu__item {
+            margin-right: 0px;
+            margin-bottom: rem(5px);
+            color: #fff;
+            font-size: rem(38px);
+            line-height: rem(72px);
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        @include tablets {
+            display: flex;
+        }
     }
 }

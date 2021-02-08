@@ -5,75 +5,75 @@
         display: flex;
         text-align: left;
     }
-}
 
-.benefit__image {
-    display: flex;
-    justify-content: center;
-    margin-bottom: rem(20px);
+    &__image {
+        display: flex;
+        justify-content: center;
+        margin-bottom: rem(20px);
 
-    &:last-child {
-        margin-bottom: 0;
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        @include tablets {
+            margin-bottom: 1.5rem;
+        }
+
+        @include phones {
+            margin-right: 1.3rem;
+            margin-bottom: 0rem;
+        }
     }
 
-    @include tablets {
-        margin-bottom: 1.5rem;
+    &__image-wrapper {
+        display: flex;
+        width: rem(128px);
+        height: rem(128px);
+        position: relative;
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: #F2F5F4;
+        align-items: center;
+        justify-content: center;
     }
 
-    @include phones {
-        margin-right: 1.3rem;
-        margin-bottom: 0rem;
-    }
-}
-
-.benefit__image-wrapper {
-    display: flex;
-    width: rem(128px);
-    height: rem(128px);
-    position: relative;
-    border-radius: 50%;
-    overflow: hidden;
-    background-color: #F2F5F4;
-    align-items: center;
-    justify-content: center;
-}
-
-.benefit__icon {
-    display: block;
-    height: rem(70px);
-    min-height: 70px;
-    max-width: 70px;
-    object-fit: cover;
-}
-
-.benefit__text {
-    @include phones {
-        padding-top: rem(10px);
-    }
-}
-
-.benefit__title {
-    color: $black;
-    font-weight: bold;
-    font-size: rem(27px);
-    line-height: rem(32px);
-    margin-bottom: rem(18px);
-
-    @include tablets {
-        margin-bottom: 0.4rem;
+    &__icon {
+        display: block;
+        height: rem(70px);
+        min-height: 70px;
+        max-width: 70px;
+        object-fit: cover;
     }
 
-    @include phones {
-        font-size: 1.7rem;
-        margin-bottom: 0.9rem;
+    &__text {
+        @include phones {
+            padding-top: rem(10px);
+        }
     }
-}
 
-.benefit__desc {
-    line-height: rem(23px);
+    &__title {
+        color: $black;
+        font-weight: bold;
+        font-size: rem(27px);
+        line-height: rem(32px);
+        margin-bottom: rem(18px);
 
-    @include phones {
-        line-height: 1.2;
-        font-size: 1.1rem;
+        @include tablets {
+            margin-bottom: 0.4rem;
+        }
+
+        @include phones {
+            font-size: 1.7rem;
+            margin-bottom: 0.9rem;
+        }
+    }
+
+    &__desc {
+        line-height: rem(23px);
+
+        @include phones {
+            line-height: 1.2;
+            font-size: 1.1rem;
+        }
     }
 }

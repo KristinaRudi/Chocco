@@ -5,17 +5,17 @@
     flex-direction: column;
     justify-content: center;
 
-    &_font-color_green {
+    &__title {
+        font-size: rem(48px);
+        font-weight: bold;
+        line-height: rem(48px);
+        color: $black;
+        margin-bottom: rem(27px);
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &--font-color--green {
         color: $input-title;
     }
-}
-
-.section__title {
-    font-size: rem(48px);
-    font-weight: bold;
-    line-height: rem(48px);
-    color: $black;
-    margin-bottom: rem(27px);
-    text-align: center;
-    text-transform: uppercase;
 }

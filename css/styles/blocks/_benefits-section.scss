@@ -2,7 +2,6 @@
     position: relative;
     background: url("../img/decor/benefits/big-leaf-grey.png") left top 42% no-repeat;
     padding: 1.7rem 0 6.4rem 0;
-    height: 90vh;
 
     @include tablets {
         background-position: left top 11%;
@@ -31,8 +30,3 @@
     }
 }
 
-.benefits__container {
-    @include phones {
-        width: 98%;
-    }
-}

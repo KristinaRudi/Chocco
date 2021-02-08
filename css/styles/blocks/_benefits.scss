@@ -5,53 +5,59 @@
         flex-direction: column;
         padding-right: 10%;
     }
-}
 
-.benefits__item {
-    flex: 1;
-    padding: 0 2%;
-    position: relative;
-
-    @include tablets {
-        padding: 0 4%;
-        ;
-        margin-bottom: 0;
-    }
-
-    @include phones {
-        padding: 0;
-        margin-bottom: 12.5%;
-
-        &:last-child {
-            margin-bottom: 0;
+    &__container {
+        @include phones {
+            width: 98%;
         }
     }
 
-    &::before {
-        content: url("../img/decor/benefits/Combined-shape.png");
-        position: absolute;
-        top: rem(60px);
-        right: 0;
-        transform: translate(50%);
+    &__item {
+        flex: 1;
+        padding: 0 2%;
+        position: relative;
 
         @include tablets {
-            display: none;
+            padding: 0 4%;
+            ;
+            margin-bottom: 0;
         }
 
         @include phones {
-            display: none;
+            padding: 0;
+            margin-bottom: 12.5%;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
         }
-    }
-
-    &:first-child {
-        padding-left: 0;
-    }
-
-    &:last-child {
-        padding-right: 0;
 
         &::before {
-            display: none;
+            content: url("../img/decor/benefits/Combined-shape.png");
+            position: absolute;
+            top: rem(60px);
+            right: 0;
+            transform: translate(50%);
+
+            @include tablets {
+                display: none;
+            }
+
+            @include phones {
+                display: none;
+            }
+        }
+
+        &:first-child {
+            padding-left: 0;
+        }
+
+        &:last-child {
+            padding-right: 0;
+
+            &::before {
+                display: none;
+            }
         }
     }
 }

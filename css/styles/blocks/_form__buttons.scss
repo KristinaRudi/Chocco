@@ -1,16 +1,13 @@
 .form__buttons {
-    margin-top: 1.9rem;
-    margin-left: rem(-10px);
+    margin-top: rem(16px);
 
     @include tablets {
         display: flex;
         justify-content: center;
-        margin-top: 1.8rem;
-        margin-left: 3rem;
+        margin-top: 1.1rem;
     }
 
     @include phones {
-        margin-top: 2rem;
-        margin-left: 3.6rem;
+        margin-top: 1.6rem;
     }
 }

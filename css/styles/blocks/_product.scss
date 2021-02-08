@@ -1,0 +1,115 @@
+.product {
+    &__container {
+        display: flex;
+
+        @include tablets {
+            flex-direction: column;
+        }
+    }
+
+    &__col {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    &__img {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__ingredients {
+        display: block;
+        background: #86C3D7;
+        width: rem(91px);
+        height: rem(91px);
+        border-radius: rem(4px);
+        margin-bottom: rem(24px);
+    }
+
+    &__icon {
+        fill: #fff;
+        width: rem(91px);
+        height: rem(91px);
+    }
+
+    &__title {
+        font-weight: bold;
+        font-size: rem(36px);
+        line-height: rem(43px);
+        color: $black;
+        text-transform: uppercase;
+        margin-bottom: rem(23px);
+
+        @include tablets {
+            text-align: center;
+            font-size: rem(30px);
+            margin-bottom: rem(13px);
+        }
+    }
+
+    &__desc {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__text {
+        padding-right: rem(42px);
+        margin-bottom: rem(24px);
+        line-height: rem(21.6px);
+
+        @include tablets {
+            text-align: center;
+            padding-right: 0;
+            margin-bottom: rem(20px);
+            padding: 0 rem(92px);
+        }
+
+        @include phones {
+            padding: 0 rem(47px);
+            margin-bottom: rem(24px);
+        }
+    }
+
+    &__row {
+        display: flex;
+        margin-bottom: rem(21px);
+
+        @include tablets {
+            justify-content: center;
+        }
+
+        @include phones {
+           margin-bottom: rem(26px);
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__price {
+        color: #151515;
+        font-size: rem(60px);
+        line-height: rem(60px);
+        font-weight: 300;
+        width: rem(148px);
+    }
+}
+
+.row__content {
+    display: flex;
+    flex-direction: column;
+    margin-right: rem(44px);
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.content {
+    &__value {
+        font-weight: bold;
+        color: #000;
+    }
+}

@@ -1,9 +1,8 @@
-.hero-section {
+.hero {
     background: url("../img/decor/hero/big-leaf.png") right bottom no-repeat;
     background-color: $blue;
     color: #fff;
     position: relative;
-    height: 90vh;
 
     @include tablets {
         background-position: right bottom 76%;
@@ -37,102 +36,102 @@
             display: none;
         }
     }
-}
 
-.hero__container {
-    background: url("../img/decor/hero/chocolates.png") right top 40%/53% no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    padding: rem(22px) 0 rem(59px) 0;
-
-    @include tablets {
-        background: none;
-        padding: 1.222222rem rem(13px) 3.5rem 0;
-    }
-
-    @include phones {
-        width: 99%;
-        padding: 1.222222rem 0 4.5rem 0;
-    }
-}
-
-.hero__title {
-    @include tablets {
-        width: 100%;
-        flex: 1;
+    &__container {
+        background: url("../img/decor/hero/chocolates.png") right top 40%/53% no-repeat;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+        justify-content: space-between;
+        height: 100%;
+        padding: rem(22px) 0 rem(59px) 0;
 
-        &::before {
-            content: "";
-            background: url("../img/decor/hero/chocolates-with-berries.png") center center/contain no-repeat;
-            width: 24.611111rem;
-            height: 22.388889rem;
-            margin-bottom: 1.2rem;
+        @include tablets {
+            background: none;
+            padding: 1.222222rem rem(13px) 3.5rem 0;
+        }
+
+        @include phones {
+            width: 99%;
+            padding: 1.222222rem 0 4.5rem 2%;
         }
     }
 
-    @include phones {
-        &::before {
-            width: 24.611111rem;
-            height: 22.388889rem;
+    &__title {
+        @include tablets {
+            width: 100%;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            &::before {
+                content: "";
+                background: url("../img/decor/hero/chocolates-with-berries.png") center center/contain no-repeat;
+                width: 24.611111rem;
+                height: 22.388889rem;
+                margin-bottom: 1.2rem;
+            }
+        }
+
+        @include phones {
+            &::before {
+                width: 24.611111rem;
+                height: 22.388889rem;
+            }
         }
     }
-}
 
-.hero__title-section {
-    width: 43%;
+    &__title-section {
+        width: 43%;
 
-    @include tablets {
-        width: 100%;
-    }
-}
-
-.hero__main-title {
-    font-size: rem(48px);
-    line-height: rem(59px);
-    font-weight: bold;
-    margin-bottom: rem(19px);
-    text-transform: uppercase;
-
-    @include tablets {
-        margin-bottom: 0.6rem;
+        @include tablets {
+            width: 100%;
+        }
     }
 
-    @include phones {
-        line-height: 2.277778rem;
-        font-size: 2.5rem;
-        margin-bottom: 0.4rem;
-    }
-}
+    &__main-title {
+        font-size: rem(48px);
+        line-height: rem(59px);
+        font-weight: bold;
+        margin-bottom: rem(19px);
+        text-transform: uppercase;
 
-.hero__title-desc {
-    font-size: rem(21px);
-    margin-bottom: rem(48px);
-    padding-right: 64%;
-    line-height: rem(25px);
+        @include tablets {
+            margin-bottom: 0.6rem;
+        }
 
-    @include tablets {
-        padding-right: 0;
-        text-align: center;
-        padding: 0 10.5rem;
-        margin-bottom: 1.6rem;
+        @include phones {
+            line-height: 2.277778rem;
+            font-size: 2.5rem;
+            margin-bottom: 0.4rem;
+        }
     }
 
-    @include phones {
-        padding: 0 18%;
-        font-size: 1.12rem;
+    &__title-desc {
+        font-size: rem(21px);
+        margin-bottom: rem(48px);
+        padding-right: 64%;
+        line-height: rem(25px);
+
+        @include tablets {
+            padding-right: 0;
+            text-align: center;
+            padding: 0 10.5rem;
+            margin-bottom: 1.6rem;
+        }
+
+        @include phones {
+            padding: 0 18%;
+            font-size: 1.12rem;
+        }
     }
-}
 
-.hero__icons-section {
+    &__icons-section {
 
-    @include tablets {
-        display: none;
+        @include tablets {
+            display: none;
+        }
     }
 }

@@ -1,12 +1,13 @@
 .hamburger {
-    position: fixed;
+    position: absolute;
     width: 1.5rem;
     height: 1.45rem;
     flex-direction: column;
     justify-content: space-between;
     visibility: hidden;
+    z-index: $burger;
 
-    .hamburger__plank {
+    &__plank {
         height: 4px;
         display: block;
         background: #fff;
@@ -17,26 +18,28 @@
         display: inline-flex;
         visibility: visible;
         right: 4%;
+        top:4%;
     }
 
     @include phones {
-        right: 0.7%;
-    }
-}
-
-.hamburger__active {
-    right: 4%;
-    top: 4%;
-
-    .hamburger__plank:nth-child(1) {
-        opacity: 0;
+        right: 3%;
     }
 
-    .hamburger__plank:nth-child(2) {
-        transform: rotate(45deg);
-    }
+    &--active {
+        right: 4%;
+        top: 4%;
+        position: fixed;
 
-    .hamburger__plank:nth-child(3) {
-        transform: rotate(-45deg) translateY(-8px) translateX(6px)
+        .hamburger__plank:nth-child(1) {
+            opacity: 0;
+        }
+
+        .hamburger__plank:nth-child(2) {
+            transform: rotate(45deg);
+        }
+
+        .hamburger__plank:nth-child(3) {
+            transform: rotate(-45deg) translateY(-8px) translateX(6px)
+        }
     }
 }

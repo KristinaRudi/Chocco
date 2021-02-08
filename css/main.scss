@@ -16,10 +16,13 @@ $green-two: #2E4E3F;
 $black:#292929;
 
 //z-indexes
+$product-img-before:-10;
+$product-img-after:-20;
 $reviews-section-before:1;
 $reviews-section-after:20;
 $z-fixed-menu:100;
-$fs-menu:150;
+$fs-menu:1000;
+$burger:1100;
 
 @import "./styles/blocks/media";
 
@@ -45,12 +48,15 @@ $fs-menu:150;
 @import "./styles/blocks/headline";
 @import "./styles/blocks/benefits";
 @import "./styles/blocks/benefit";
+@import "./styles/blocks/products-section";
+@import "./styles/blocks/products";
+@import "./styles/blocks/product";
+@import "./styles/blocks/dropdown";
 @import "./styles/blocks/reviews-section";
 @import "./styles/blocks/reviews__display";
 @import "./styles/blocks/reviews__switcher";
 @import "./styles/blocks/interactive-avatar";
-@import "./styles/blocks/order-section";
-@import "./styles/blocks/order__title";
+@import "./styles/blocks/order";
 @import "./styles/blocks/form";
 @import "./styles/blocks/radio";
 @import "./styles/blocks/form__buttons";
@@ -59,4 +65,3 @@ $fs-menu:150;
 @import "./styles/blocks/socials";
 @import "./styles/blocks/fixed-menu";
 @import "./styles/blocks/fullscreen-menu";
-@import "./styles/blocks/menu__vertical";

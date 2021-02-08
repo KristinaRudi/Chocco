@@ -12,9 +12,9 @@
     opacity: 0;
     z-index: $fs-menu;
     transition: all 0.4s;
-}
 
-.fullscreen-menu__active {
-    left: 0;
-    opacity: 1;
+    &--active {
+        left: 0;
+        opacity: 1;
+    }
 }

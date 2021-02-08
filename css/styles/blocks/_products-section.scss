@@ -1,0 +1,27 @@
+.products-section {
+    position: relative;
+
+    &::before {
+        content: url("../img/decor/product/product-big-leaf.png");
+        position: absolute;
+        bottom: -66%;
+        right: 0%;
+        z-index: $reviews-section-before;
+
+        @include tablets {
+            display: none;
+        }
+    }
+
+    &::after {
+        content: url("../../../img/decor/product/product-berries.png");
+        position: absolute;
+        bottom: -40%;
+        right: 0%;
+        z-index: $reviews-section-after;
+
+        @include tablets {
+            display: none;
+        }
+    }
+}

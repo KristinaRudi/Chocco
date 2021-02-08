@@ -7,40 +7,40 @@
     @include tablets {
         display: none;
     }
-}
 
-.fixed-menu__item {
-    margin-bottom: 0.3rem;
-    position: relative;
+    &__item {
+        margin-bottom: 0.3rem;
+        position: relative;
 
-    &:last-child {
-        margin-bottom: 0;
-    }
+        &:last-child {
+            margin-bottom: 0;
+        }
 
-    &_active {
-        .fixed-menu__link {
-            border-color: #fff;
+        &--active {
+            .fixed-menu__link {
+                border-color: #fff;
+            }
         }
     }
-}
 
-.fixed-menu__link {
-    width: rem(16px);
-    height: rem(16px);
-    border-radius: 50%;
-    border: rem(1px) solid transparent;
-    display: block;
-
-    &::before {
-        content: "";
-        display: block;
-        width: rem(6px);
-        height: rem(6px);
+    &__link {
+        width: rem(16px);
+        height: rem(16px);
         border-radius: 50%;
-        background: #ffffff;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        border: rem(1px) solid transparent;
+        display: block;
+
+        &::before {
+            content: "";
+            display: block;
+            width: rem(6px);
+            height: rem(6px);
+            border-radius: 50%;
+            background: #ffffff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
     }
 }

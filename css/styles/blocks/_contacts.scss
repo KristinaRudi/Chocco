@@ -1,6 +1,5 @@
 .contacts-section {
     position: relative;
-    height: 102.5vh;
     min-height: 41rem;
 
     @include tablets {
@@ -12,17 +11,17 @@
         min-height: 38.3rem;
         height: 85vh;
     }
-}
 
-.contacts-section__map {
-    height: 100%;
-}
+    &__map {
+        height: 100%;
+    }
 
-.contacts-section__img {
-    object-fit: cover;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
+    &__img {
+        object-fit: cover;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+    }
 }
 
 .contacts {
@@ -32,13 +31,13 @@
         align-items: center;
         margin-bottom: 18px;
     }
-}
 
-.contacts__adress {
-    font-size: rem(21px);
-    color: $black;
+    &__adress {
+        font-size: rem(21px);
+        color: $black;
 
-    @include phones {
-        margin-bottom: 0.5rem;
+        @include phones {
+            margin-bottom: 0.5rem;
+        }
     }
 }

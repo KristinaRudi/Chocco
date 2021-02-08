@@ -11,104 +11,112 @@
         padding: 0% 0%;
     }
 
-}
+    &__col {
+        flex: 1;
+        margin-right: 4%;
 
-.form__col {
-    flex: 1;
-    margin-right: 4%;
-
-    &:last-child {
-        margin-right: rem(0px);
-    }
-
-    @include tablets {
-        margin-right: rem(0px);
-    }
-}
-
-.form__row {
-    display: flex;
-    margin-bottom: rem(13px);
-
-    &:last-child {
-        margin-bottom: rem(0px);
-    }
-
-    @include phones {
-        margin-bottom: 0.9rem;
-    }
-}
-
-.order__form__row {
-    @include tablets {
-        margin-top: 0.6rem;
-        margin-bottom: 3.6rem;
-    }
-
-    @include phones {
-        margin-top: 1rem;
-        margin-bottom: 4.1rem;
-    }
-}
-
-.form__block {
-    flex: 1;
-    margin-right: rem(20px);
-
-    &:last-child {
-        margin-right: 0;
-    }
-}
-
-.form__input {
-    width: 100%;
-    border: none;
-    padding: rem(15px) rem(12px);
-    border: solid rem(3px) transparent;
-    border-radius: rem(4px);
-    outline: darkgreen;
-
-    @include tablets {
-        padding: 0.4rem rem(12px);
-    }
-
-    &:focus {
-        border-color: #dee2bd;
-        outline: none;
-    }
-
-    &__textarea {
-        width: 100%;
-        height: rem(152px);
-        resize: none;
-        margin-bottom: rem(19px);
+        &:last-child {
+            margin-right: rem(0px);
+        }
 
         @include tablets {
-            width: 100%;
-            margin-bottom: -2.7rem;
-            height: 5rem;
+            margin-right: rem(0px);
+            margin-bottom: 0.6rem;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            @include phones {
+                margin-bottom: 1rem;
+            }
         }
     }
-}
 
-.form__controls {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: rem(9px);
+    &__row {
+        display: flex;
+        margin-bottom: rem(13px);
 
-    @include tablets {
-        margin-bottom: 0.8rem;
+        &:last-child {
+            margin-bottom: rem(0px);
+        }
+
+        @include phones {
+            margin-bottom: 0.9rem;
+        }
+
+        &--after-comments {
+            margin-bottom: rem(30px);
+
+            @include tablets {
+                margin-bottom: rem(15px);
+            }
+
+            @include phones {
+                margin-bottom: rem(20px);
+            }
+        }
     }
 
-    @include phones {
-        justify-content: center;
+    &__block {
+        flex: 1;
+        margin-right: rem(20px);
+
+        &:last-child {
+            margin-right: 0;
+        }
     }
 
-    @include mini-phones{
-        justify-content:space-between;
+    &__input {
+        width: 100%;
+        border: none;
+        padding: rem(15px) rem(12px);
+        border: solid rem(3px) transparent;
+        border-radius: rem(4px);
+        outline: darkgreen;
+
+        @include tablets {
+            padding: 0.4rem rem(12px);
+        }
+
+        &:focus {
+            border-color: #dee2bd;
+            outline: none;
+        }
+
+        &--textarea {
+            width: 100%;
+            height: rem(152px);
+            resize: none;
+            /*margin-bottom: rem(19px);*/
+
+            @include tablets {
+                width: 100%;
+                /*margin-bottom: -2.7rem;*/
+                height: 5rem;
+            }
+        }
     }
 
-    &_last-elem {
-        margin-bottom: rem(0px);
+    &__controls {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: rem(10px);
+       
+        @include tablets {
+            margin-bottom: 0.5rem;
+        }
+
+        @include phones {
+            justify-content: center;
+        }
+
+        @include mini-phones {
+            justify-content: space-between;
+        }
+
+        &--last-elem {
+            margin-bottom: rem(0px);
+        }
     }
 }

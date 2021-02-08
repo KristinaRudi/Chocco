@@ -1,16 +1,7 @@
-.order-section {
+.order {
     position: relative;
     background: url("../img/bg/delivery-back.png") no-repeat;
     background-size: cover;
-    height: 90.5vh;
-
-    @include tablets {
-        min-height: 56.8rem;
-    }
-
-    @include phones {
-        min-height: 47.8rem;
-    }
 
     &::before {
         content: url("../img/decor/order/blueberry.png");
@@ -31,6 +22,21 @@
 
         @include tablets {
             display: none;
+        }
+    }
+
+    &__title {
+        color: $green-one;
+        text-transform: uppercase;
+        margin-bottom: 3.5rem;
+
+        @include tablets {
+            margin-bottom: 2rem;
+        }
+
+        @include phones {
+            font-size: 2.5rem;
+            margin-bottom:2.3rem;
         }
     }
 }

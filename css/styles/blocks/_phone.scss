@@ -3,28 +3,29 @@
     display: flex;
     align-items: center;
     margin-top: rem(4px);
+
+    &__icon {
+        flex-shrink: 0;
+    }
+
+    &__icon-elem {
+        height: rem(14px);
+        width: rem(14px);
+        margin-right: rem(6px);
+        fill: #fff;
+
+        &--bg--green {
+            fill: $input-title;
+        }
+    }
+
+    &__text {
+        white-space: nowrap;
+        color: #fff;
+
+        &--bg--green {
+            color: $input-title;
+        }
+    }
 }
 
-.phone-number__icon {
-    flex-shrink: 0;
-}
-
-.phone-number__icon-elem {
-    height: rem(14px);
-    width: rem(14px);
-    margin-right: rem(6px);
-    fill: #fff;
-}
-
-.phone-number__icon-elem__bg__green {
-    fill: $input-title;
-}
-
-.phone-number__text {
-    white-space: nowrap;
-    color: #fff;
-}
-
-.phone-number__text__bg__green {
-    color: $input-title;
-}

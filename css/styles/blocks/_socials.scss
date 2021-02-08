@@ -1,27 +1,29 @@
 .socials {
     display: flex;
     align-items: center;
-}
 
-.socials__item {
-    margin-right: rem(14px);
+    &__item {
+        margin-right: rem(14px);
 
-    &:last-child {
-        margin-right: 0;
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &--icon--vk {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__link {
+        width: 20px;
+        height: 20px;
+        fill: #B3B3B3;
+
+        &:hover {
+            fill: $black;
+        }
     }
 }
 
-.socials__item--icon--vk {
-    display: flex;
-    align-items: center;
-}
 
-.socials__link {
-    width: 20px;
-    height: 20px;
-    fill: #B3B3B3;
-
-    &:hover {
-        fill: $black;
-    }
-}

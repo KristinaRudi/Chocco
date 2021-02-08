@@ -5,17 +5,15 @@
     margin-right: rem(23px);
 
     &:first-child {
-        margin-bottom: rem(10px);
-
+        margin-bottom: rem(20px);
     }
 
     @include tablets {
         margin-right: 1.9rem;
+    }
 
-        @include phones {
-            margin-bottom: rem(0px);
-        }
-
+    @include phones {
+        margin-right: 2.3rem;
     }
 
     &:last-child {
@@ -31,36 +29,36 @@
             }
         }
     }
-}
 
-.radio__elem {
-    display: none;
+    &__elem {
+        display: none;
 
-    &:checked~.radio__visible {
-        &::before {
-            display: block;
+        &:checked~.radio__visible {
+            &::before {
+                display: block;
+            }
         }
     }
-}
 
-.radio__visible {
-    width: rem(25px);
-    height: rem(25px);
-    border-radius: 50%;
-    position: relative;
-    background-color: #fff;
-    margin-right: rem(11px);
-
-    &::before {
-        content: "";
-        width: rem(13px);
-        height: rem(13px);
-        background-color: #365A49;
+    &__visible {
+        width: rem(25px);
+        height: rem(25px);
         border-radius: 50%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        display: none;
+        position: relative;
+        background-color: #fff;
+        margin-right: rem(11px);
+
+        &::before {
+            content: "";
+            width: rem(13px);
+            height: rem(13px);
+            background-color: #365A49;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: none;
+        }
     }
 }

@@ -6,7 +6,7 @@
     line-height: rem(18px);
     font-weight: 800;
 
-    &_theme_white {
+    &--theme--white {
         background: #fff;
         color: $green-one;
 
@@ -23,7 +23,7 @@
         }
     }
 
-    &_theme_green {
+    &--theme--green {
         background: $green-two;
         color: #fff;
 
@@ -43,7 +43,7 @@
         }
     }
 
-    &_theme_transparent {
+    &--theme--transparent {
         color: $input-title;
         font-weight: normal;
         text-transform: none;
@@ -52,7 +52,15 @@
 
         @include tablets {
             margin-left: -0.4rem;
+        }
+    }
 
+    &--theme--products {
+        background-color: $green-one;
+        color: #fff;
+
+        &:hover {
+            background-color: $green-two;
         }
     }
 }

@@ -1,0 +1,70 @@
+.dropdown {
+    position: relative;
+    display: inline-flex;
+    font-weight: 500;
+    font-size: rem(16px);
+    color: #000;
+
+    @include tablets {
+        display: none;
+    }
+
+    &__menu {
+        display: flex;
+        flex-direction: column;
+        max-width: rem(273px);
+        position: absolute;
+        right: rem(-9999px);
+        background-color: #d1cdcd;
+        opacity: 0;
+        transition: opacity .1s;
+        border-radius: rem(4px);
+    }
+
+    &__list {
+        padding: rem(27px) rem(23px);
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+
+        margin-bottom: rem(25px);
+    }
+
+    .dropdown__item:last-child {
+        margin-bottom: 0;
+    }
+
+    &__item-elem {
+        margin-right: rem(14px);
+        width: rem(32px);
+        display: flex;
+    }
+
+    &__item-logo {
+        width: rem(32px);
+        height: rem(27px);
+    }
+
+    &__item-text {
+        color: #000000;
+        font-size: rem(16px);
+        min-width: rem(127px);
+        margin-right: rem(25px);
+    }
+}
+
+.dropdown:hover .dropdown__menu {
+    opacity: 1;
+    right: rem(107px);
+
+    &::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        right: 20%;
+    }
+}
