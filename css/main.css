@@ -434,12 +434,15 @@ img {
 
 .hamburger {
   position: absolute;
-  width: 1.5rem;
-  height: 1.45rem;
   flex-direction: column;
   justify-content: space-between;
+  display: inline-flex;
   visibility: hidden;
   z-index: 1100;
+  width: 1.5rem;
+  height: 1.45rem;
+  right: 4%;
+  top: 4%;
 }
 .hamburger__plank {
   height: 4px;
@@ -449,20 +452,10 @@ img {
 }
 @media screen and (max-width: 768px) {
   .hamburger {
-    display: inline-flex;
     visibility: visible;
-    right: 4%;
-    top: 4%;
-  }
-}
-@media screen and (max-width: 480px) {
-  .hamburger {
-    right: 3%;
   }
 }
 .hamburger--active {
-  right: 4%;
-  top: 4%;
   position: fixed;
 }
 .hamburger--active .hamburger__plank:nth-child(1) {

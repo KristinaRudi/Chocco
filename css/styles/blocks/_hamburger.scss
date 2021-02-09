@@ -1,11 +1,14 @@
 .hamburger {
     position: absolute;
-    width: 1.5rem;
-    height: 1.45rem;
     flex-direction: column;
     justify-content: space-between;
+    display: inline-flex;
     visibility: hidden;
     z-index: $burger;
+    width: 1.5rem;
+    height: 1.45rem;
+    right: 4%;
+    top: 4%;
 
     &__plank {
         height: 4px;
@@ -15,19 +18,10 @@
     }
 
     @include tablets {
-        display: inline-flex;
         visibility: visible;
-        right: 4%;
-        top:4%;
-    }
-
-    @include phones {
-        right: 3%;
     }
 
     &--active {
-        right: 4%;
-        top: 4%;
         position: fixed;
 
         .hamburger__plank:nth-child(1) {
