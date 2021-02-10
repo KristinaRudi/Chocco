@@ -11,7 +11,8 @@ burger.addEventListener('click', (e) => {
 
 for (var i = 0; i < closefs.length; i++) {
     closefs[i].addEventListener('click', (e) => {
-    menu.classList.toggle('fullscreen-menu--active');
+        menu.classList.toggle('fullscreen-menu--active');
+        burger.classList.toggle('hamburger--active');
     })
 }
 
