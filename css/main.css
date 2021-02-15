@@ -955,6 +955,117 @@ img {
   right: 20%;
 }
 
+.team-section__title {
+  margin-bottom: 6%;
+}
+@media screen and (max-width: 768px) {
+  .team-section__title {
+    margin-bottom: 7%;
+  }
+}
+
+.team {
+  display: flex;
+}
+.team--version--desktop .team__content {
+  position: absolute;
+  top: 100%;
+}
+@media screen and (max-width: 768px) {
+  .team--version--desktop {
+    display: none;
+  }
+}
+.team--version--mobile {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .team--version--mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.team__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 2%;
+}
+.team__item:last-child {
+  margin-right: 0px;
+}
+@media screen and (max-width: 768px) {
+  .team__item {
+    margin-right: 0px;
+  }
+}
+.team__item--active .team__content {
+  height: 100%;
+}
+.team__item--active .team__title::after {
+  border-bottom: 8px solid #365A49;
+  border-top: 0;
+}
+.team__member {
+  margin-bottom: 21px;
+}
+.team__icon {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.team__title {
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+  font-size: 1.1677777778rem;
+  line-height: 1.4011111111rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  padding: 0;
+}
+@media screen and (max-width: 768px) {
+  .team__title {
+    margin-bottom: 18px;
+  }
+}
+.team__title:focus {
+  outline: none;
+}
+.team__title::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 8px solid #365A49;
+  margin-left: 4px;
+}
+.team__content {
+  text-align: center;
+  height: 0;
+  overflow: hidden;
+  width: 12.3333333333rem;
+  transition: height 0.3s;
+}
+.team__content-title {
+  text-align: center;
+  font-weight: 400;
+  color: #292929;
+}
+@media screen and (max-width: 768px) {
+  .team__content-title {
+    font-weight: 700;
+  }
+}
+.team__content-text {
+  font-weight: 300;
+  line-height: 21.6px;
+}
+
 .reviews-section {
   position: relative;
   background: url("../img/decor/reviews/strawberries.png") top 6.4% right 1.9% no-repeat;
@@ -1069,6 +1180,24 @@ img {
     top: 6%;
     right: -2%;
   }
+}
+.reviews__list {
+  position: relative;
+  min-height: 14.7222222222rem;
+}
+.reviews__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.3s;
+  opacity: 0;
+}
+.reviews__item--active {
+  position: static;
+  opacity: 1;
+  pointer-events: unset;
 }
 .reviews__display-inner {
   display: flex;
