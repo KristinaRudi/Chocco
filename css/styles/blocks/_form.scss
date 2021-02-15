@@ -96,13 +96,17 @@
                 height: 5rem;
             }
         }
+
+        &--error {
+            border: solid 1px red;
+        }
     }
 
     &__controls {
         display: flex;
         flex-wrap: wrap;
         margin-bottom: rem(10px);
-       
+
         @include tablets {
             margin-bottom: 0.5rem;
         }

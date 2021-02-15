@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Chocco</title>
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
   <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -154,15 +156,123 @@
       <section class="section products-section">
         <div class="container products-section__container">
           <div class="products-slider">
-            <div class="products-slider__arrows">
-              <a href="#" class="products-slider__arrows products-slider__arrows--direction-prev">
+            <div class="product-slider__arrows">
+              <a href="#" class="product-slider__arrow product-slider__arrow--direction--prev">
                 <img src="./img/icons/arrow-left.png" alt="arrow to the left">
               </a>
-              <a href="#" class="products-slider products-slider__arrows--direction-next">
+              <a href="#" class="product-slider__arrow product-slider__arrow--direction--next">
                 <img src="./img/icons/arrow-right.png" alt="arrow to the right">
               </a>
             </div>
             <ul class="products">
+              <li class="products__item product">
+                <div class="product__container">
+                  <div class="product__col">
+                    <div class="product__img">
+                      <img src="./img/content/products/product-chocolates.png" alt="chocolates">
+                    </div>
+                  </div>
+                  <div class="product__col">
+                    <div class="dropdown">
+                      <a href="" class="product__ingredients">
+                        <svg class="product__icon">
+                          <use xlink: href="./img/sprite.svg#composition"></use>
+                        </svg>
+                      </a>
+                      <div class="dropdown__menu">
+                        <ul class="dropdown__list">
+                          <li class="dropdown__item">
+                            <div class="dropdown__item-elem">
+                              <svg class="dropdown__item-logo">
+                                <use xlink:href="./img/sprite.svg#oat"></use>
+                              </svg>
+                            </div>
+                            <div class="dropdown__item-text">Овес</div>
+                            <div class="dropdown__item-weight">25г</div>
+                          </li>
+                          <li class="dropdown__item">
+                            <div class="dropdown__item-elem">
+                              <svg class="dropdown__item-logo">
+                                <use xlink:href="./img/sprite.svg#flower"></use>
+                              </svg>
+                            </div>
+                            <div class="dropdown__item-text">Мор.водоросли</div>
+                            <div class="dropdown__item-weight">15г</div>
+                          </li>
+                          <li class="dropdown__item">
+                            <div class="dropdown__item-elem">
+                              <svg class="dropdown__item-logo">
+                                <use xlink:href="./img/sprite.svg#almond"></use>
+                              </svg>
+                            </div>
+                            <div class="dropdown__item-text">Миндаль</div>
+                            <div class="dropdown__item-weight">20г</div>
+                          </li>
+                          <li class="dropdown__item">
+                            <div class="dropdown__item-elem">
+                              <svg class="dropdown__item-logo">
+                                <use xlink:href="./img/sprite.svg#washing-powder"></use>
+                              </svg>
+                            </div>
+                            <div class="dropdown__item-text">Сухое молоко</div>
+                            <div class="dropdown__item-weight">10г</div>
+                          </li>
+                          <li class="dropdown__item">
+                            <div class="dropdown__item-elem">
+                              <svg class="dropdown__item-logo">
+                                <use xlink:href="./img/sprite.svg#seeds"></use>
+                              </svg>
+                            </div>
+                            <div class="dropdown__item-text">Тыкв.семечки</div>
+                            <div class="dropdown__item-weight">20г</div>
+                          </li>
+                          <li class="dropdown__item">
+                            <div class="dropdown__item-elem">
+                              <svg class="dropdown__item-logo">
+                                <use xlink:href="./img/sprite.svg#apitherapy"></use>
+                              </svg>
+                            </div>
+                            <div class="dropdown__item-text">Зам.сахара</div>
+                            <div class="dropdown__item-weight">4г</div>
+                          </li>
+                          <li class="dropdown__item">
+                            <div class="dropdown__item-elem">
+                              <svg class="dropdown__item-logo">
+                                <use xlink:href="./img/sprite.svg#beans"></use>
+                              </svg>
+                            </div>
+                            <div class="dropdown__item-text">Какао бобы</div>
+                            <div class="dropdown__item-weight">4г</div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="product__title">Батончик “Морские водоросли”</div>
+                    <div class="product__desc">
+                      <div class="product__text">
+                        <p>
+                          Гранола из морских водорослей с овсом, миндалем и тыквенными семечками. В состав также
+                          входят: сухое молоко, заменитель сахара и какао бобы.
+                        </p>
+                      </div>
+                      <div class="product__row">
+                        <div class="row__content">
+                          <span class="content__description">Калорийность</span>
+                          <span class="content__value">120 ккал</span>
+                        </div>
+                        <div class="row__content">
+                          <span class="content__description">Вес</span>
+                          <span class="content__value">98 грамм</span>
+                        </div>
+                      </div>
+                      <div class="product__row">
+                        <div class="product__price">140 ₽</div>
+                        <a href="#" class="button button--theme--products">Заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
               <li class="products__item product">
                 <div class="product__container">
                   <div class="product__col">
@@ -493,39 +603,40 @@
         <div class="container order__container">
           <h2 class="section__title order__title">Закажите доставку</h2>
           <form class="form">
+            <input type="hidden" name="to" value="somewhere@gmail.com">
             <div class="form__col">
               <div class="form__row">
                 <label class="form__block">
                   <div class="form__title">Имя</div>
-                  <input type="text" class="form__input">
+                  <input type="text" name="name" class="form__input">
                 </label>
                 <label class="form__block">
                   <div class="form__title">Телефон</div>
-                  <input type="tel" class="form__input">
+                  <input type="tel" name="phone" class="form__input">
                 </label>
               </div>
               <div class="form__row">
                 <label class="form__block">
                   <div class="form__title">Улица</div>
-                  <input type="text" class="form__input">
+                  <input type="text" name="street" class="form__input">
                 </label>
               </div>
               <div class="form__row">
                 <label class="form__block">
                   <div class="form__title">Дом</div>
-                  <input type="text" class="form__input">
+                  <input type="text" name="house" class="form__input">
                 </label>
                 <label class="form__block">
                   <div class="form__title">Корпус</div>
-                  <input type="tel" class="form__input">
+                  <input type="tel" name="part" class="form__input">
                 </label>
                 <label class="form__block">
                   <div class="form__title">Квартира</div>
-                  <input type="tel" class="form__input">
+                  <input type="tel" name="appartment" class="form__input">
                 </label>
                 <label class="form__block">
                   <div class="form__title">Этаж</div>
-                  <input type="tel" class="form__input">
+                  <input type="tel" name="floor" class="form__input">
                 </label>
               </div>
             </div>
@@ -533,7 +644,7 @@
               <div class="form__row form__row--after-comments">
                 <label class="form__block">
                   <div class="form__title">Комментарий</div>
-                  <textarea class="form__input form__input--textarea"></textarea>
+                  <textarea name="comment" class="form__input form__input--textarea"></textarea>
                 </label>
               </div>
               <div class="form__controls">
@@ -671,10 +782,24 @@
       </ul>
     </nav>
   </div>
+  <div id="modal" class="modal">
+    <div class = "modal__container">
+      <div class="modal__content">
+        Сообщение отправлено
+      </div>
+      <div class="modal__button-container">
+        <a href="#" class="button app-submit-button button--theme--green">Закрыть</a>
+      </div>
+    </div>
+  </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <script src="./scripts/slider.js"></script>
   <script src="./scripts/fullscreen-menu.js"></script>
   <script src="./scripts/tabs.js"></script>
   <script src="./scripts/acco.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script src="./scripts/modal.js"></script>
 </body>
 
 </html>

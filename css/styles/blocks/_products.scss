@@ -3,37 +3,47 @@
     display: flex;
     justify-content: center;
 
-    &__arrows--direction-prev {
-        position: absolute;
+    .bx-wrapper {
+        border: 0;
+        background: transparent;
+        box-shadow: none;
+    }
+}
+
+.product-slider__arrow {
+    position: absolute;
+    z-index: 20;
+
+    &--direction--prev {
         top: 50%;
 
         @include tablets {
-            top:30%;
+            top: 30%;
             right: 85%;
         }
 
         @include phones {
-            top:30%;
+            top: 30%;
             right: 95%;
         }
     }
 
-    &__arrows--direction-next {
-        position: absolute;
+    &--direction--next {
         top: 50%;
         right: 1%;
 
         @include tablets {
-            top:30%;
+            top: 30%;
             right: 5%;
         }
 
         @include phones {
-            top:30%;
+            top: 30%;
             right: 0%;
         }
     }
 }
+
 
 .products {
     max-width: 97%;
