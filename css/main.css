@@ -790,7 +790,8 @@ img {
 }
 
 .products {
-  max-width: 97%;
+  /*max-width: 97%;*/
+  display: flex;
 }
 
 .product__container {
@@ -952,7 +953,7 @@ img {
 
 .dropdown:hover .dropdown__menu {
   opacity: 1;
-  right: 5.9444444444rem;
+  right: 25.5%;
 }
 .dropdown:hover .dropdown__menu::before {
   content: "";
