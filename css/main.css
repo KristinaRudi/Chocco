@@ -32,8 +32,14 @@ body {
   position: relative;
   width: 100%;
   /* min-width: $containerWidth + rem(20px);*/
-  min-height: 100%;
+  height: 100%;
   overflow: hidden;
+}
+
+.maincontent {
+  height: 100%;
+  transition: transform 1s;
+  will-change: transform;
 }
 
 .container {
@@ -104,7 +110,7 @@ img {
 }
 
 .section {
-  height: 100vh;
+  height: 100%;
   min-height: 36.1111111111rem;
   display: flex;
   flex-direction: column;
@@ -1075,6 +1081,91 @@ img {
   line-height: 21.6px;
 }
 
+.products-menu-section {
+  background: url(../img/bg/product-menu.jpg) center center/cover no-repeat;
+  position: relative;
+  color: #fff;
+}
+.products-menu-section__title {
+  color: inherit;
+  position: absolute;
+  top: 16%;
+  left: 7.6%;
+  margin-bottom: 0;
+}
+
+.products-menu {
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.products-menu__item {
+  display: flex;
+}
+.products-menu__title {
+  position: relative;
+  width: 102px;
+}
+.products-menu__image {
+  height: 100%;
+  object-fit: cover;
+}
+.products-menu__content {
+  background-color: rgba(51, 53, 55, 0.9);
+  width: 0;
+  position: relative;
+  overflow: hidden;
+  transition: width 0.7s;
+}
+.products-menu__container {
+  padding: 30px 80px 0px 38px;
+  position: relative;
+}
+.products-menu__close {
+  background-color: inherit;
+  border: none;
+  position: absolute;
+  right: 3%;
+  top: 10%;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.products-menu__close:focus {
+  outline: none;
+}
+.products-menu__close-plank {
+  height: 3px;
+  display: block;
+  background: #fff;
+  border-radius: 0.5555555556rem;
+}
+.products-menu__close-plank:first-child {
+  transform: rotate(45deg);
+}
+.products-menu__close-plank:last-child {
+  transform: rotate(-45deg) translateY(-2px) translateX(2px);
+}
+.products-menu__content-text {
+  font-size: 16.0138px;
+  line-height: 24px;
+}
+.products-menu__text {
+  display: flex;
+  white-space: nowrap;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: rotate(270deg);
+  font-weight: 700;
+  font-size: 48px;
+  padding-left: 39px;
+}
+
 .reviews-section {
   position: relative;
   background: url("../img/decor/reviews/strawberries.png") top 6.4% right 1.9% no-repeat;
@@ -1704,6 +1795,13 @@ img {
   top: 30%;
   right: 4%;
   z-index: 100;
+  color: #fff;
+}
+.fixed-menu--dark .fixed-menu__item--active .fixed-menu__link {
+  border-color: #000;
+}
+.fixed-menu--dark .fixed-menu__link::before {
+  background: #000;
 }
 @media screen and (max-width: 768px) {
   .fixed-menu {
