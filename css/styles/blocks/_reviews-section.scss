@@ -4,11 +4,11 @@
 
     @include tablets {
         background-position: top 0.4% right -5.1%;
-        min-height: 57.4rem;
+        /*min-height: 57.4rem;*/
     }
 
     @include phones {
-        min-height: 50.3rem;
+       /* min-height: 50.3rem;*/
         background-position: top 2.4% right -11.1%;
     }
 

@@ -138,12 +138,12 @@ img {
 @media screen and (max-width: 768px) {
   .hero {
     background-position: right bottom 76%;
-    min-height: 58.58rem;
+    /*min-height: 58.58rem;*/
   }
 }
 @media screen and (max-width: 480px) {
   .hero {
-    min-height: 49.7rem;
+    /* min-height: 49.7rem;*/
     background-position: right bottom 84%;
     background-size: 70%;
   }
@@ -508,13 +508,13 @@ img {
 @media screen and (max-width: 768px) {
   .benefits-section {
     background-position: left top 11%;
-    min-height: 58.8rem;
+    /* min-height: 58.8rem;*/
   }
 }
 @media screen and (max-width: 480px) {
   .benefits-section {
     background: none;
-    min-height: 60rem;
+    /*min-height: 60rem;*/
     padding: 0 0 0.9rem 0;
   }
 }
@@ -726,7 +726,7 @@ img {
 .products-section::before {
   content: url("../img/decor/product/product-big-leaf.png");
   position: absolute;
-  bottom: -66%;
+  bottom: 42%;
   right: 0%;
   z-index: 1;
 }
@@ -736,9 +736,9 @@ img {
   }
 }
 .products-section::after {
-  content: url("../../../img/decor/product/product-berries.png");
+  content: url("../img/decor/product/product-berries.png");
   position: absolute;
-  bottom: -40%;
+  bottom: -24%;
   right: 0%;
   z-index: 20;
 }
@@ -1173,12 +1173,12 @@ img {
 @media screen and (max-width: 768px) {
   .reviews-section {
     background-position: top 0.4% right -5.1%;
-    min-height: 57.4rem;
+    /*min-height: 57.4rem;*/
   }
 }
 @media screen and (max-width: 480px) {
   .reviews-section {
-    min-height: 50.3rem;
+    /* min-height: 50.3rem;*/
     background-position: top 2.4% right -11.1%;
   }
 }

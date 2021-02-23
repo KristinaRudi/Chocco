@@ -4,7 +4,7 @@
     &::before {
         content: url("../img/decor/product/product-big-leaf.png");
         position: absolute;
-        bottom: -66%;
+        bottom: 42%;
         right: 0%;
         z-index: $reviews-section-before;
 
@@ -14,9 +14,9 @@
     }
 
     &::after {
-        content: url("../../../img/decor/product/product-berries.png");
+        content: url("../img/decor/product/product-berries.png");
         position: absolute;
-        bottom: -40%;
+        bottom: -24%;
         right: 0%;
         z-index: $reviews-section-after;
 

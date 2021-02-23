@@ -5,12 +5,12 @@
 
     @include tablets {
         background-position: left top 11%;
-        min-height: 58.8rem;
+       /* min-height: 58.8rem;*/
     }
 
     @include phones {
         background: none;
-        min-height: 60rem;
+        /*min-height: 60rem;*/
         padding: 0 0 0.9rem 0;
     }
 
