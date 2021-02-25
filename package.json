@@ -12,10 +12,12 @@
   },
   "devDependencies": {
     "gulp": "^4.0.2",
-    "webpack": "^5.24.0"
+    "webpack": "^5.24.1",
+    "webpack-cli": "^4.5.0"
   },
   "scripts": {
-    "gulp": "gulp"
+    "gulp": "gulp",
+    "build":"webpack --output dist/bundle.js"
   },
   "repository": {
     "type": "git",

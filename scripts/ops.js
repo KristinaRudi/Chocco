@@ -116,7 +116,7 @@ $(window).on("keydown", (e) => {
 
 $(".wrapper").on("touchmove", e => e.preventDefault());
 
-$("[data-scroll-to]").click(e => {
+$("[data-scroll-to]").on("click", e => {
     e.preventDefault();
 
     const $this = $(e.currentTarget);
